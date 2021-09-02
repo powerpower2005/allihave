@@ -36,7 +36,7 @@ ex) if(!VK_RIGHT && RB != 0) RB -= 0.2f;
 
 
 #define ROOT2			1.41421f
-int MoveCharacter(void)						// 매 프레임 호출된다 
+int MoveCharacter(void)						
 {
 	short		bLeftKey, bRightKey;
 	short		bUpKey, bDownKey;
