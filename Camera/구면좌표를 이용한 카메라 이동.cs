@@ -90,7 +90,6 @@ public class SphericalCamera : MonoBehaviour
 
 
 		//구면좌표계에서 직교좌표계로 변환하는 것임.
-
 		public Vector3 toCartesian
 		{
 			get

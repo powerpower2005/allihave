@@ -1,15 +1,14 @@
-﻿//정규분포 난수
+﻿//정규분포의 확률로 공을 위로 쏘아올림 -> 이게 더 자연스럽고 현실에 가까움.
 
 #include <stdlib.h>
 #include <math.h>
 
-#define PI					3.14159265f			// 원주율
+#define PI					3.14159f			// 원주율(그냥 정의)
 #define VIEW_WIDTH			640					// 화면 너비
 #define VIEW_HEIGHT			480					// 화면 높이 
 #define CHAR_WIDTH			64					// 캐릭터 너비 
 #define CHAR_HEIGHT			64					// 캐릭터 높이 
 #define MAX_BALL_NUM		100					// 최대 공 수 
-
 #define VEL_WIDTH			3.0f				// 가로방향속도폭(표준편차)
 #define VEL_HEIGHT			1.5f				// 세로방향속도폭(표준편차)
 #define BASE_VEL			17.0f				// 기초속도 
@@ -28,9 +27,9 @@ int					nBallNum;					// 공 수
 int					nTimeCount;					// 시간 
 
 
-int InitCharacter(void)						// 초기화
+int InitBall(void)						// 초기화
 {
-	int					i;
+	int	i;
 	// 무든 공을 무효로 
 	for (i = 0; i < MAX_BALL_NUM; i++) {
 		Balls[i].bAvctive = false;
@@ -41,10 +40,10 @@ int InitCharacter(void)						// 초기화
 }
 
 
-int MoveCharacter(void)						
+int BallShoot(void)						
 {
-	int					i;
-	float				fRand_r, fRand_t;
+	int	i;
+	float fRand_r, fRand_t;
 
 	// 공의 이동 
 	for (i = 0; i < MAX_BALL_NUM; i++) {
@@ -60,7 +59,7 @@ int MoveCharacter(void)
 		}
 	}
 
-	// 공의 발생 
+	// 공의 발생, 2프레임마다.
 	if ((nTimeCount % 2) == 0) {
 		for (i = 0; i < MAX_BALL_NUM; i++) {
 			if (Balls[i].bAvctive == false) {

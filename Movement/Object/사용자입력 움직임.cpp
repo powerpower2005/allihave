@@ -35,7 +35,7 @@ ex) if(!VK_RIGHT && RB != 0) RB -= 0.2f;
 */
 
 
-#define ROOT2			1.41421f
+#define ROOT2			1.41421f // 계산안하고 그냥 가정
 int MoveCharacter(void)						
 {
 	short		bLeftKey, bRightKey;
