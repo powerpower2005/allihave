@@ -17,7 +17,7 @@ using UnityEngine;
 
 //구글 API를 사용하기 위해서는 구글 클라우드 플랫폼에서 프로젝트를 만들어야 활성화가 가능함.
 
-//1. API AIzaSyBj9CqgTek9OaFgLzuHsB863jhRWhHGT5E
+//1. API 받아오기
 //2.Client ID : GOOGLE에서 알아서 받자 -> JSON 파일로 가지고 있어야함
 //3.서비스계정
 
