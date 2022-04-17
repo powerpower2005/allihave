@@ -4,8 +4,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Collections;
 
-namespace TRPUtil.AlphabetNubmer
-{
+
 	public static class Conversion
 	{
 
@@ -170,4 +169,3 @@ namespace TRPUtil.AlphabetNubmer
 		}
 		#endregion
 	}
-}

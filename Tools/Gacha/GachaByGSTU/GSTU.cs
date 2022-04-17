@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using GoogleSheetsToUnity;
 
-[CreateAssetMenu(fileName = "GSTU", menuName = "THREE RABBIT PACKAGE/GSTU_Data", order = int.MaxValue)]
 //Scriptable로 선언하여 값복사하는 오버헤드 줄임.
 public class GSTU : ScriptableObject
 {
@@ -23,7 +22,7 @@ public class GSTU : ScriptableObject
 
 
 	/// <summary>
-    /// key를 이용하여
+    /// key를 이용하여 데이터 가져옴.
     /// </summary>
 	public string GetData(string key, int coloumId)
 	{
